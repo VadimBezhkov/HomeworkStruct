@@ -8,10 +8,12 @@ namespace HomeworkStruct
 {
     struct Struct_Sklad
     {
+
         Product[] products;
 
         public int productsCount;
         public int warehouseSize;
+
         public void Sklad()
         {
             warehouseSize = 5000;
@@ -40,6 +42,7 @@ namespace HomeworkStruct
         public decimal GetSummInfo()
         {
             decimal summProducts = 0;
+
             if (productsCount>0&&products!=null)
             {
                 foreach (var item in products)

@@ -47,36 +47,43 @@ namespace HomeworkStruct
         {
             
         }
+
         public Product(int ID, string name)
            : this(ID, 0, 0, name)
         {
 
         }
+
         public Product( string name)
            : this(0, 0, 0, name)
         {
 
         }
+
         public Product(int ID, decimal price)
            : this(ID, price, null)
         {
 
         }
+
         public Product( decimal price,int count, string name)
            : this(0, price,count, name)
         {
 
         }
+
         public Product(int ID,int count, string name)
            : this(ID, 0, 0, name)
         {
 
         }
+
         public Product(int ID, decimal price,int count)
            : this(ID, price, count, null)
         {
 
         }
+
         public void GetPrint()
         {
             Console.WriteLine($"ID: {_iD} Name: {_name} Price: {_price} Count: {_count}");
