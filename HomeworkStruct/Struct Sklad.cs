@@ -43,22 +43,12 @@ namespace HomeworkStruct
         {
             decimal summProducts = 0;
 
-            if (productsCount>0&&products!=null)
-            {
                 foreach (var item in products)
                 {
-
                     if(item.Price!=0 && item.Count != 0)
-                        summProducts =  item.Count* item.Price+ summProducts;
-                    else
-                    {
-                       summProducts= summProducts;
-                    }
-
+                        summProducts +=  item.Count* item.Price;
                 }
                 return summProducts;
-            }
-            return 0;
         }
         public void GetPrint(Product product)
         {
