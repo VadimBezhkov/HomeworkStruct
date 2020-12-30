@@ -48,7 +48,7 @@ namespace HomeworkStruct
                 foreach (var item in products)
                 {
 
-                    if(item.Price!=0)
+                    if(item.Price!=0&&item.Count!=0)
                         summProducts =  item.Count* item.Price+ summProducts;
                     else
                     {
